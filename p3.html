@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Generate your meme</title>
+        <meta name="description" content="Meme Generation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="p3_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Meme Generator</h1>
+            <form id="imageForm">
+                <div>
+                    <label for="imgUrl">Image URL:</label>
+                    <input type="url" id="imgUrl" name="imgUrl" required>
+                </div>
+                <div>
+                    <label for="topText">Top Text:</label>
+                    <input type="text" id="topText" name="topText" required>
+                </div>
+                <div>
+                    <label for="bottomText">Bottom Text:</label>
+                    <input type="text" id="bottomText" name="bottomText" required>
+                </div>
+                <button type="button" onclick="updateImage()">Submit</button>
+            </form>
+            <div class="image-container" id="imageContainer">
+            </div>
+        </div>
+        
+        <script src="p3_index.js" async defer></script>
+    </body>
+</html>
